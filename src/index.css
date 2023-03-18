@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,800;1,300&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{
+    font-family: 'Poppins', sans-serif;
+}
+body{background:white;}
+li{
+    list-style: none;
+    cursor:pointer;
+    position:relative;
+}
+li:hover:before{
+   position:absolute;
+   content:"";
+   height:4px;
+   width:100%;
+   background:#2a68ff;
+   right:0;
+   bottom:-8px;
+   color:#2aff68;
+}
+.icon{
+    cursor:pointer;
+}
+.card{
+    background:#000;
+}
